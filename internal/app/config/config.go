@@ -56,7 +56,7 @@ func loadServer(file *ini.File) {
 func loadDb(file *ini.File) {
 	s := file.Section("database")
 	Dbtype = s.Key("Dbtype").MustString("mysql")
-	DbName = s.Key("DbName").MustString("douyin")
+	DbName = s.Key("DbName").MustString("whiteboard")
 	DbPort = s.Key("DbPort").MustString("3306")
 	DbHost = s.Key("DbHost").MustString("127.0.0.1")
 	DbUser = s.Key("DbUser").MustString("")
