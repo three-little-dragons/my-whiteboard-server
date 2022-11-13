@@ -1,10 +1,5 @@
 package proto
 
-type Point struct {
-	X float64
-	Y float64
-}
-
 type FreeDraw struct {
 	Graph
 	Opacity     int

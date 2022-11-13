@@ -1,8 +1,6 @@
-package http
+package service
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/three-little-dragons/my-whiteboard-server/internal/pkg/com"
 	"github.com/three-little-dragons/my-whiteboard-server/internal/pkg/snowflake"
 )
 
@@ -16,6 +14,6 @@ func init() {
 	}
 }
 
-func SnowflakeId(c *gin.Context) {
-	com.Success(c, node.Generate().Int64())
+func GenerateId() int64 {
+	return node.Generate().Int64()
 }
